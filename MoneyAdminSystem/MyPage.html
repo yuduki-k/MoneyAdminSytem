@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>マイページ</title>
+	<script type="text/javascript" src="js/MyPage.js"></script>
+	<link rel="stylesheet" href="assets/MyPage.css" media="all">
+	<meta charset="utf-8">
+</head>
+<body onload="detadown()">
+	<div id="username">
+		<p id="name"></p>
+	</div>
+	<div id="calc">
+		<input type="number" name="shiki1" id="shikiBox1">
+		<span>?</span>
+		<input type="number" name="shiki2" id="shikiBox2">
+		<br>
+		<button onclick="calc('+')">+</button>
+		<button onclick="calc('-')">-</button>
+		<button onclick="calc('*')">×</button>
+		<button onclick="calc('/')">÷</button>
+		<button onclick="calc('Z')">税込</button>
+		<br>
+		<p>答え:<span id="kotae"></span></p>
+	</div>
+</body>
+</html>
