@@ -1,4 +1,4 @@
-l<?php
+<?php
 $dsn = 'mysql:dbname=resource; host=localhost';
 $usr = 'Yuduki';
 $passwd = 'dev';
