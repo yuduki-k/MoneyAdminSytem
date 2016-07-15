@@ -4,7 +4,7 @@
 	text-align: center;
 }
 
-div{
+#login{
 	width: 2000px;
 	height:150px;
 	background-color:#6fbb9a ;
@@ -15,4 +15,20 @@ div{
 }
 label{
 	color: #ffffff;
+}
+
+#dol{
+	color: rgb(24, 121, 16);
+}
+form{
+	text-align: left;
+}
+#logo{
+	text-align: center;
+}
+#yen{
+	color: gold;
+}
+#ver{
+	color: rgb(210, 124, 124);
 }
