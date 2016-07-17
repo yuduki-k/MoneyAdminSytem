@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="assets/MyPage.css" media="all">
 	<meta charset="utf-8">
 </head>
-<body onload="detadown()">
+<body onload="detadown()" >
 	<div id="username">
 		<p id="name"></p>
 	</div>
@@ -23,6 +23,10 @@
 		<br>
 		<p>答え:<span id="kotae"></span></p>
 	</div>
-	<div id="in"
+	<div id="in">
+		<p>金額(¥)<input type="number" id="money"></p>
+		<p>件名<input type="text" id="kenmei"></p>
+		<button onclick="goin()">仮想貯金箱に入れる</button>
+	</div>
 </body>
 </html>

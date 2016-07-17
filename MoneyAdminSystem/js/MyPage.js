@@ -3,6 +3,9 @@ function detadown() {
 	username = localStorage.getItem("Name");
 	username = username + "さん、こんにちは!";
 	document.getElementById("name").textContent = username;
+	if (localStorage.getItem('nowMoney') == null) {
+		localStorage.setItem("nowMoney","0");
+	}
 }
 
 
@@ -35,4 +38,13 @@ function calc(mode){
 			return;
 		}
 	}
+}
+
+
+
+function goin() {
+	var money = document.getElementById("money").value;
+	var kenmei = document.getElementById("kenmei").value;
+	localStorage.setItem("nowMoney",money);
+	localStorage.setItem("kenmei",kenmei);
 }
