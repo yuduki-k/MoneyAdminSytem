@@ -2,16 +2,16 @@
 <html>
 <head>
 	<title>マイページ</title>
-	<script type="text/javascript" src="js/MyPage.js"></script>
+	<script src="js/MyPage.js"></script>
 	<link rel="stylesheet" href="assets/MyPage.css" media="all">
 	<meta charset="utf-8">
 </head>
-<body onload="detadown()">
+<body onload="start()" >
 	<div id="username">
 		<p id="name"></p>
 	</div>
 	<div id="calc">
-		<h3>計算機</h3>4
+		<h3>計算機</h3>
 		<input type="number" name="shiki1" id="shikiBox1">
 		<span>?</span>
 		<input type="number" name="shiki2" id="shikiBox2">
@@ -23,6 +23,10 @@
 		<button onclick="calc('Z')">税込</button>
 		<br>
 		<p>答え:<span id="kotae"></span></p>
+	</div>
+	<div id="deposit">
+		<p><label name="1">代金</label><input type="text" id="charge" name="1"></p>
+		<button onclick="deposit()">入金</button>
 	</div>
 </body>
 </html>

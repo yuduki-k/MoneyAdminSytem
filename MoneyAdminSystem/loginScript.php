@@ -1,7 +1,9 @@
 <?php
+error_reporting(-1);
+ini_set( 'display_errors', 1 );
 $dsn = 'mysql:dbname=ID_Pass; host=127.0.0.1';
 $usr = 'Yuduki';
-$passwd = '1229';
+$passwd = 'dev';
 
 try {
   $db = new PDO($dsn,$usr,$passwd);
@@ -13,13 +15,13 @@ function Password_authorization(){
 
 }
 $user = POST['username'];
-echo $user
-$sql
+echo $user;
+$sql = '0';
 $Re = mysql_query("SELECT * FROM ID_Pass WHERE ID = $user");
 $Answer = mysql_num_rows($Re);
 if($Answer){
   Password_authorization();
 }else{
-  echo "指定されたユーザー名は存在しません。";
+  exit("指定されたIDは存在しません。");
 }
 ?>

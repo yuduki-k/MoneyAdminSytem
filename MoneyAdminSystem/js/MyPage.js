@@ -1,5 +1,6 @@
 var username;
-function detadown() {
+var charge;
+function start(){
 	username = localStorage.getItem("Name");
 	username = username + "さん、こんにちは!";
 	document.getElementById("name").textContent = username;
@@ -35,4 +36,17 @@ function calc(mode){
 			return;
 		}
 	}
+}
+function deposit(){
+	var SYSnum = "1";
+	var	SYSnum2 = placeInt(SYSnum);
+	SYSnum2 = SYSnum2 + 1;
+	var 0 = "item" + SYSnum2;
+	charge = document.getElementById("charge").value;
+	subject = document.getElementById("subject").value;
+	var item{
+		charge: charge;
+		subject: subject;
+	}
+	localStorage.setItem(0, JSON.stringify(item));
 }
